@@ -16,6 +16,9 @@ import java.util.HashMap;
 
 public class BookDetailsActivity extends AppCompatActivity {
 
+    private String[][] order_details = {};
+
+    HashMap<String,String> item;
     Button btn;
     SimpleAdapter sa;
     ListView lst;
@@ -27,6 +30,7 @@ public class BookDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_book_details);
 
         btn = findViewById(R.id.buttonBDBack);
+        lst = findViewById(R.id.listViewOD);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +42,41 @@ public class BookDetailsActivity extends AppCompatActivity {
         SharedPreferences sharedpreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
         String username = sharedpreferences.getString("username","").toString();
         ArrayList dbData = db.getOrderData(username);
+
+
+        order_details = new String[dbData.size()][];
+        for (int i=0;i<order_details.length;i++) {
+            order_details[i] = new String[5];
+            String arrData = dbData.get(i).toString();
+            String[] strData = arrData.split(java.util.regex.Pattern.quote("$"));
+            order_details[i][0] = strData[0];
+            order_details[i][1] = strData[1];//+" "+StrData[3];
+            if (strData[7].compareTo("BookRoom") == 0) {
+                order_details[i][3] = "Deliver on:" + strData[4];
+            } else {
+                order_details[i][3] = "Deliver on:" + strData[4] + " "+"to" + " "+strData[5];
+            }
+            order_details[i][2] = "Total Paid." + strData[6];
+            order_details[i][4] = strData[7];
+        }
+
+        list = new ArrayList();
+        for(int i=0;i<order_details.length;i++) {
+            item = new HashMap<String, String>();
+            item.put("line1", order_details[i][0]);
+            item.put("line2", order_details[i][1]);
+            item.put("line3", order_details[i][2]);
+            item.put("line4", order_details[i][3]);
+            item.put("line5", order_details[i][4]);
+            list.add(item);
+        }
+
+        sa = new SimpleAdapter(this, list,
+                R.layout.multi_lines,
+                new String[]{"line1", "line2", "line3", "line4", "line5"},
+                new int[]{R.id.line_a, R.id.line_b, R.id.line_c, R.id.line_d, R.id.line_e});
+        lst.setAdapter(sa);
+
 
 
     }
