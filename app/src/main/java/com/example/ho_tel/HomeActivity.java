@@ -39,15 +39,13 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        CardView HotelArticles = findViewById(R.id.cardHotelArticles);
-        HotelArticles.setOnClickListener(new View.OnClickListener() {
+        CardView Developer = findViewById(R.id.cardDeveloper);
+        Developer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this, ActivityHotelArticles.class));
+                startActivity(new Intent(HomeActivity.this, DeveloperActivity.class));
             }
         });
-
-
 
 
     }

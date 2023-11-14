@@ -95,7 +95,7 @@ public class BookRoomActivity extends AppCompatActivity {
                 if (db.checkAppointmentExists(username, title + " => " + fullname, address, contact, dateButton1.getText().toString(), dateButton2.getText().toString()) == 1) {
                     Toast.makeText(getApplicationContext(), "Room already booked", Toast.LENGTH_SHORT).show();
                 } else {
-                    db.addOrder(username, title + " => " + fullname, address, contact, 0, dateButton1.getText().toString(), dateButton2.getText().toString(), Float.parseFloat(fees), "BookRoom");
+                    db.addOrder(username, title + " => " + fullname, address, contact, 0, dateButton1.getText().toString(), dateButton2.getText().toString(), Float.parseFloat(fees), "Room");
                     Toast.makeText(getApplicationContext(), "Your booking is successful", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(BookRoomActivity.this, FindRoomActivity.class));
 

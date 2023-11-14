@@ -51,10 +51,10 @@ public class BookDetailsActivity extends AppCompatActivity {
             String[] strData = arrData.split(java.util.regex.Pattern.quote("$"));
             order_details[i][0] = strData[0];
             order_details[i][1] = strData[1];//+" "+StrData[3];
-            if (strData[7].compareTo("BookRoom") == 0) {
-                order_details[i][3] = "Deliver on:" + strData[4];
+            if (strData[7].compareTo("Room") == 0) {
+                order_details[i][3] = "From Date:" + strData[4];
             } else {
-                order_details[i][3] = "Deliver on:" + strData[4] + " "+"to" + " "+strData[5];
+                order_details[i][3] = "From Date:" + strData[4] + " "+"to Date" + " "+strData[5];
             }
             order_details[i][2] = "Total Paid." + strData[6];
             order_details[i][4] = strData[7];

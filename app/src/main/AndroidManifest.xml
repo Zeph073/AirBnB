@@ -11,10 +11,13 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/hb"
-        android:label="@string/app_name"
+        android:label="AirBnB"
         android:supportsRtl="true"
         android:theme="@style/Theme.Ho_tel"
         tools:targetApi="31">
+        <activity
+            android:name=".DeveloperActivity"
+            android:exported="false" />
         <activity
             android:name=".RateUSActivity"
             android:exported="false" />
@@ -28,7 +31,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyC-3ifNhhvjs4bMoHjzp4TLAC2Osa16Rsc"/>
+            android:value="AIzaSyC-3ifNhhvjs4bMoHjzp4TLAC2Osa16Rsc" />
 
         <activity
             android:name=".BookDetailsActivity"
@@ -44,9 +47,6 @@
             android:exported="false" />
         <activity
             android:name=".CustomerCareActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityHotelArticles"
             android:exported="false" />
         <activity
             android:name=".ActivityAirBnB"
