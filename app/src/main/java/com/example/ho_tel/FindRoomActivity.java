@@ -10,10 +10,12 @@ import android.widget.TextView;
 
 public class FindRoomActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_room);
+
         CardView exit = findViewById(R.id.cardFDBack);
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
