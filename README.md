@@ -27,5 +27,5 @@ Welcome to the Airbnb Booking App! This Java-based mobile application is designe
 ## Getting Started
 1. **Clone the Repository:**
    ```bash
-   git clone 
+   git clone https://github.com/oluyalireuben/Hotel_AirBnB_App.git
    
