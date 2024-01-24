@@ -22,11 +22,10 @@ Welcome to the Airbnb Booking App! This Java-based mobile application is designe
 
 ## Technologies Used
 - **Frontend**: Java
-- **Backend**: [Specify backend technologies]
 - **Database**: MySQL
 
 ## Getting Started
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/airbnb-booking-app.git
+   git c
    
