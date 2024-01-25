@@ -27,7 +27,9 @@ Welcome to the Airbnb Booking App! This Java-based mobile application is designe
 - **Database**: MySQL
 
 ## Getting Started
-1. **Clone the Repository:**
+ **Clone the Repository:**
    ```bash
    git clone https://github.com/oluyalireuben/Hotel_AirBnB_App.git
+
+
    
