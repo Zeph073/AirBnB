@@ -4,7 +4,7 @@
 In the evolving landscape of accommodation booking applications, there exists a need for a comprehensive and user-friendly solution tailored to the diverse preferences of modern travelers. Existing platforms lack specialized modules for distinct room types, such as Single Room, Living Room, Living Room plus Parking, and Single Room plus Parking. Furthermore, the absence of an integrated Customer Care system, interactive Room Locations in Map View, and an in-app Rating feature poses challenges in enhancing user engagement and satisfaction. This project aims to address these gaps by developing an Airbnb Booking App that seamlessly caters to varied user needs, providing a more personalized and enriched booking experience.
 
 ## Overview
-Welcome to the Airbnb Booking App! This Java-based mobile application is designed to provide users with a seamless experience in exploring and booking different types of rooms. Whether it's a Single room, Living room, Living room plus parking, or Single room plus parking, we've got you covered. Additionally, the app offers features like Customer Care, Room Locations in Map View, and a convenient Rate Us option.
+Welcome to the Airbnb Booking App! This Java-based mobile application is designed to provide users with a seamless experience in exploring and booking different types of rooms. Whether it's a Single room, Living room, Living room plus parking, or Single room plus parking, we've got you covered. Additionally, the app offers features like Customer Care, Room Locations in Map View, and a convenient Rate Us option..
 
 ## Features
 ### Room Booking Modules
